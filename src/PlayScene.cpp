@@ -65,7 +65,6 @@ void PlayScene::start()
 	// Add StarShip to Scene
 	m_pStarShip = new StarShip();
 	m_pStarShip->getTransform()->position = glm::vec2(200.0f, 300.0f);
-	m_pStarShip->setTargetPosition(m_pTarget->getTransform()->position);
 	addChild(m_pStarShip);
 
 	ImGuiWindowFrame::Instance().setGUIFunction(std::bind(&PlayScene::GUI_Function, this));

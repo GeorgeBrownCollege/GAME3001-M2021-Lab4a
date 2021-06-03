@@ -32,10 +32,9 @@ private:
 	// Game Objects
 	Target* m_pTarget;
 	StarShip* m_pStarShip;
-	Obstacle* m_pObstacle;
 
 	// UI Controls
-	bool m_bToggleSeek;
+	bool m_bToggleGrid;
 };
 
 #endif /* defined (__PLAY_SCENE__) */

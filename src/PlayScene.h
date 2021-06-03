@@ -6,6 +6,7 @@
 #include "Scene.h"
 #include "StarShip.h"
 #include "Target.h"
+#include "Tile.h"
 
 
 class PlayScene : public Scene
@@ -35,6 +36,17 @@ private:
 
 	// UI Controls
 	bool m_bToggleGrid;
+
+	// Pathfinding functions and objects
+	std::vector<Tile*> m_pGrid;
+
+	void m_buildGrid();
+	void m_setGridEnabled(bool state);
+	bool m_getGridEnabled() const;
+	bool m_isGridEnabled;
+	
+	
+	
 };
 
 #endif /* defined (__PLAY_SCENE__) */
